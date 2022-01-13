@@ -8,6 +8,68 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <form id="character_form">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="character_name" />
+        </li>
+        <li>
+          <label for="race">Race:</label>
+          <select id="race" name="character_race">
+            <option value="">Select your race</option>
+            <option value="human">Human</option>
+            <option value="nudar">Nudar</option>
+            <option value="azaer">Azaer</option>
+          </select>
+        </li>
+        <li id="subrace_item">
+          <label for="subrace">Subrace:</label>
+          <select id="subrace" name="character_subrace"></select>
+        </li>
+        <li>
+          <label for="gender">Gender:</label>
+          <select id="gender" name="character_gender">
+            <option value="">Select your gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="genderless">Genderless</option>
+          </select>
+        </li>
+        <li>
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="character_age" />
+        </li>
+        <li>
+          <label for="region">Region:</label>
+          <select id="region" name="character_region">
+            <option value="">Select your region</option>
+            <option value="dawnlands">Dawnlands</option>
+            <option value="deadlands">Deadlands</option>
+            <option value="rainlands">Rainlands</option>
+          </select>
+        </li>
+        <!-- <li>
+              <label for="msg">Message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+          </li> -->
+        <!-- <button type="submit">Submit</button> -->
+      </ul>
+    </form>
+    <div id="character-list"></div>
+
+    <button id="object_button">Print object to console</button>
+    <button id="array_button">Add object to array</button>
+    <button id="clear_array_button">Clear objects in array</button>
+    <br /><br />
+    <button id="array_localstorage_button">Save array to local storage</button>
+    <button id="load_localstorage_button">Load array from local storage</button>
+    <button id="clear_localstorage_button">
+      Clear array from local storage
+    </button>
+    <br /><br /><br />
+    <a href="/POC2/POC2.html"><button>Go to Character Table</button></a>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
